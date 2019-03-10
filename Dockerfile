@@ -1,5 +1,6 @@
-FROM ficofilip/webserver_php:zadatak1 
+FROM ficofilip/webserver_php:zadatak1
 
 EXPOSE 80
-CMD apache2ctl -D FOREGROUND
+CMD ["apache2-foreground"]
+
 
