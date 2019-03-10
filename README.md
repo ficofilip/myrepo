@@ -24,3 +24,4 @@ redirect_stderr=false
 redirect_stderr=false
 
 Zadatak 3.
+
