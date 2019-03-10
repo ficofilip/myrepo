@@ -1,0 +1,30 @@
+--- #Zadatak2
+- hosts: localhost
+  tasks:
+  - name: Install Supervisor & Docker
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - docker-ce
+      - supervisor
+      update_cache: yes
+  - name: Web server
+    docker_container:
+      name: mywebserver
+      image: ficofilip/webserver_php:zadatak1
+      state: present
+      exposed_ports:
+      - 80
+  - name: Create Directories /opt/run/webphp/{log,config}
+    file:
+      path: "{{ item }}"
+      state: directory
+      owner: root
+      group: root
+      mode: 0777
+    with_items:
+      - '/opt/run/webphp/log'
+      - '/opt/run/webphp/config'
+  - name: Copy webserver config files --> /opt/run/webphp/config
+    shell: "docker cp -a mywebserver:/etc/apache2 /opt/run/webphp/config"
