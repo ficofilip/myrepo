@@ -28,5 +28,5 @@ startretries=0
 redirect_stderr=false                                                                                                                   
 redirect_stderr=false                                                                                                                   
 
-Zadatak 3.
+Zadatak 3.                                                                                                                               
 Datotke zadatak3.pcap sadrži snimljeni promet u trenutku pristupa serveru, može se provjeriti s wireshark aplikacijom.
