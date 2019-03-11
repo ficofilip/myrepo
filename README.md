@@ -21,8 +21,7 @@ Pokretanje ansible skripte zadatak2.yml preko naredbe ansible-playbook -s zadata
 -Kako bi se osiguralo da se docker container pokrene prilikom pokretanja računala i da se logovi spremaju u /opt/run/webphp/log/ a conf fileovi citaju iz /opt/run/webphp/config/ direktorija potrebno je preuzeti datoteke docker_startup.sh i supervisord.conf na računalo . Zatim je potrebno u u config datoteku /etc/supervisor/ dodati datoteku supervisord.conf i podesiti u command retku putanju tako da pokazuje na docker_startup.sh skriptu ili ručno modificirati postojeću datoteku koja se nalazi u direktoriju /etc/supervisor/supervisord.conf i dodati: 
 
 [program:docker_startup]                                                                                                                 
-command=/<putanja do skripte docker_startup.sh>/docker_startup.sh                                                                        
-autostart=true                                                                                                                           
+command=/(putanja do skripte docker_startup.sh)/docker_startup.sh                                                                        autostart=true                                                                                                                           
 autorestart=false                                                                                                                       
 startretries=0                                                                                                                           
 redirect_stderr=false                                                                                                                   
