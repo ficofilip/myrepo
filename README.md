@@ -2,7 +2,7 @@
 
 Krakta uputstva/objašnjenja
 
-Zadatak 1.  Zadatak je riješen na način da se sa docker hub-a preuzeo php:apache base iamage, dodana je datoteka test.php koji poziva php funciju phpinfo() te je web server podešen da navedenu datuteku poslužuje automatski sa pokretanjem docker imagea. Nakong toga kreirani novi docker image u koji su spremljene promjene koristeći docker commit naredbu, te je isti pohranjen na javni docker hub repozitorij. 
+Zadatak 1.  Zadatak je riješen na način da se sa docker hub-a preuzeo php:apache base iamage, dodana je datoteka test.php koji poziva php funciju phpinfo() te je web server podešen da navedenu datoteku poslužuje automatski sa pokretanjem docker imagea. Nakong toga kreiran je novi docker image u koji su spremljene promjene koristeći docker commit naredbu, te je isti pohranjen na javni docker hub repozitorij. 
 
 Novi image moguće je ručno preuzeti s repozirotija koristeći naredbu:
 docker pull ficofilip/webserver_php:zadatak1
