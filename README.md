@@ -14,7 +14,7 @@ Zadatak 2:
 Pokretanje ansible skripte zadatak2.yml preko naredbe ansible-playbook -s zadatak2.yml na zeljenom racunalu se izvode sljedeći zadaci:
 
 1. Skripta provjerava dali su instalirane aplikacije docker i supervisor te ukoliko nisu pokreće se instalacija navedenih aplikacija
-2. Skripta zatim provjerava da li na računalo postoji docker image te ukoliko ne postoji preuzima se iz javnog DockerHub repozitorija
+2. Skripta zatim provjerava da li na računalu postoji docker image te ukoliko ne postoji preuzima se iz javnog DockerHub repozitorija
 3. Kreiraju se direktoriji /opt/run/webphp/log & config koji će služiti za pohranu logova i konfiguracijskih datoteka
 4. U direktorij /opt/run/config/ kopira se sadržaj direktorija /etc/apache2 iz docker container-a
 
